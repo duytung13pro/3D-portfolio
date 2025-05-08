@@ -1,7 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/contact/page.tsx"
-
-```tsx
-// src/app/contact/page.tsx
 'use client';
 
 import Link from 'next/link';
@@ -178,7 +174,3 @@ export default function ContactPage() {
   );
 }
 
-```
-This creates the Contact page at `/contact` with a functional (client-side validation and simulated submission) contact form and placeholder social media links. The user will need to replace the placeholder social links with their actual URLs and implement a proper backend or third-party service for form submissions in a real application. The styling is consistent with the portfolio's theme.
-
-Next, I will update the todo.md.

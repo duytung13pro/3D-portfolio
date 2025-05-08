@@ -1,6 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/github/page.tsx"
-
-```tsx
 'use client';
 
 import Link from 'next/link';
@@ -20,7 +17,8 @@ interface Repo {
 // For a real application, consider using an environment variable for the username.
 const GITHUB_USERNAME = 'octocat'; // Replace with user's GitHub username or a well-known one for placeholder
 
-export default function GitHubFeedPage() {
+export default function GitHubFeedPage() 
+{
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -82,8 +80,7 @@ export default function GitHubFeedPage() {
       flexDirection: 'column',
       alignItems: 'center',
     }}>
-      <h1 style={{ fontSize: '3rem
-', marginBottom: '2rem', color: '#ffffff', textAlign: 'center' }}>
+      <h1 style={{ fontSize: '3rem', marginBottom: '2rem', color: '#ffffff', textAlign: 'center' }}>
         My GitHub Activity
       </h1>
 
@@ -110,19 +107,16 @@ export default function GitHubFeedPage() {
             }}
           >
             <div>
-              <h3 style={{ fontSize: '1.5rem
-', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
                 <a href={repo.html_url} target="_blank" rel="noopener noreferrer" style={linkStyle}>
                   {repo.name}
                 </a>
               </h3>
-              <p style={{ fontSize: '0.9rem
-', lineHeight: '1.4', color: '#cccccc', marginBottom: '1rem', minHeight: '50px' }}>
+              <p style={{ fontSize: '0.9rem', lineHeight: '1.4', color: '#cccccc', marginBottom: '1rem', minHeight: '50px' }}>
                 {repo.description || 'No description available.'}
               </p>
             </div>
-            <div style={{ fontSize: '0.8rem
-', color: '#aaaaaa', marginTop: 'auto' }}>
+            <div style={{ fontSize: '0.8rem', color: '#aaaaaa', marginTop: 'auto' }}>
               <span>⭐ {repo.stargazers_count}</span>
               <span style={{ marginLeft: '1rem' }}>🍴 {repo.forks_count}</span>
               {repo.language && <span style={{ marginLeft: '1rem', backgroundColor: '#61DAFB', color: '#1e1e2f', padding: '2px 6px', borderRadius: '4px' }}>{repo.language}</span>}
@@ -131,16 +125,9 @@ export default function GitHubFeedPage() {
         ))}
       </div>
 
-      <Link href="/" style={{ color: '#61DAFB', textDecoration: 'underline
-', fontSize: '1rem
-', marginTop: '3rem' }}>
+      <Link href="/" style={{ color: '#61DAFB', textDecoration: 'underline', fontSize: '1rem', marginTop: '3rem' }}>
         Back to Home
       </Link>
     </div>
   );
 }
-
-```
-This creates a new page at `/github` that attempts to fetch and display the 6 most recently pushed public repositories for a given GitHub username (currently 'octocat' as a placeholder). It includes loading and error states, and styled cards for each repository. The user will need to replace `'octocat'` with their actual GitHub username. If the API call fails, it will show placeholder data.
-
-Next, I will update the todo.md.

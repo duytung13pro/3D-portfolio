@@ -1,7 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/blog/page.tsx"
-
-```tsx
-// src/app/blog/page.tsx
 'use client';
 
 import Link from 'next/link';
@@ -51,7 +47,3 @@ export default function BlogPage() {
     </div>
   );
 }
-```
-This creates a placeholder page for the Blog section at `/blog`. It informs the user that this section is intended to be CMS-based and is currently a placeholder. 
-
-Next, I will update the todo.md.

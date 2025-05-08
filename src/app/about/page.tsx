@@ -1,6 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/about/page.tsx"
-
-```tsx
 'use client';
 
 import Link from 'next/link';
@@ -65,8 +62,5 @@ This portfolio is a testament to my dedication to blending creativity with techn
     </div>
   );
 }
-```
 
-This creates a simple, styled "About Me" page. The resume download currently points to a placeholder `/resume.pdf`. The user will need to add their actual resume file to the `public` directory for this to work. 
 
-Next, I will update the todo.md to reflect the creation of the About Me section.

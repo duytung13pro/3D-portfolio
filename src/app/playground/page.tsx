@@ -1,7 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/playground/page.tsx"
-
-```tsx
-// src/app/playground/page.tsx
 'use client';
 
 import Link from 'next/link';
@@ -132,8 +128,3 @@ export default function CodePlaygroundPage() {
     </div>
   );
 }
-
-```
-This creates a functional, albeit simple, Code Playground page at `/playground`. It includes a textarea for JavaScript input and a preformatted block for output. It uses `eval()` for execution, which is generally unsafe for production environments with untrusted code but serves as a basic demonstration here. It also attempts to capture `console.log` calls. The styling is kept in line with a tech/futuristic theme.
-
-Next, I will update the todo.md.

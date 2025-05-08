@@ -1,6 +1,3 @@
-"/home/ubuntu/portfolio-3d/src/app/projects/page.tsx"
-
-```tsx
 'use client';
 
 import Link from 'next/link';
@@ -131,7 +128,3 @@ export default function ProjectsPage() {
   );
 }
 
-```
-This creates a new page at `/projects` that displays project cards categorized into "Full-stack Web Apps" and "AI / ML Projects". It includes placeholder project data and styling for the cards and page. The user will need to update `projectsData` with their actual projects and potentially replace placeholder images.
-
-Next, I will update the todo.md.

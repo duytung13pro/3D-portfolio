@@ -1,0 +1,47 @@
+{
+  "name": "example",
+  "initializeCommand": "sh ops.sh init",
+  "postCreateCommand": "sh .devcontainer/example/post-create.sh",
+  "dockerComposeFile": "../../docker-compose.yml",
+  "service": "example-devcontainer",
+  "runServices": ["example-devcontainer"],
+  "shutdownAction": "none",
+  "workspaceFolder": "/workspaces/little-startup",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // ui
+        // https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Hermit.zip
+        "workbench.colorTheme": "Default Dark Modern",
+        "editor.fontFamily": "Hurmit Nerd Font",
+        "editor.fontSize": 12,
+        "terminal.integrated.fontFamily": "Hurmit Nerd Font",
+        "terminal.integrated.fontSize": 12,
+        // python
+        "python.locator": "js",
+        "python.defaultInterpreterPath": "${workspaceFolder}/example/python/.venv/bin/python"
+      },
+      "extensions": [
+        "charliermarsh.ruff",
+        "chekweitan.compare-view",
+        "cweijan.vscode-mysql-client2",
+        "eriklynd.json-tools",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "github.codespaces",
+        "github.copilot",
+        "github.vscode-pull-request-github",
+        "mechatroner.rainbow-csv",
+        "medo64.render-crlf",
+        "ms-azuretools.vscode-containers",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "usernamehw.errorlens",
+        "vadimcn.vscode-lldb"
+      ]
+    }
+  }
+}

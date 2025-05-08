@@ -1,0 +1,37 @@
+{
+    "name": "frontend",
+    "initializeCommand": "sh ops.sh init",
+    "postCreateCommand": "sh .devcontainer/frontend/post-create.sh",
+    "dockerComposeFile": "../../docker-compose.yml",
+    "service": "frontend-devcontainer",
+    "runServices": [
+        "frontend-devcontainer"
+    ],
+    "shutdownAction": "none",
+    "workspaceFolder": "/workspaces/little-startup",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/Hermit.zip
+                "editor.fontFamily": "Hurmit Nerd Font",
+                "editor.fontSize": 12,
+                "terminal.integrated.fontFamily": "Hurmit Nerd Font",
+                "terminal.integrated.fontSize": 12,
+                "workbench.colorTheme": "Default Dark Modern"
+            },
+            "extensions": [
+                "chekweitan.compare-view",
+                "eriklynd.json-tools",
+                "esbenp.prettier-vscode",
+                "github.copilot",
+                "github.vscode-pull-request-github",
+                "mechatroner.rainbow-csv",
+                "medo64.render-crlf",
+                "ms-azuretools.vscode-containers",
+                "tamasfe.even-better-toml",
+                "bradlc.vscode-tailwindcss",
+                "usernamehw.errorlens"
+            ]
+        }
+    }
+}
